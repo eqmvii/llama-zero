@@ -1,6 +1,7 @@
 <template>
   <div id="app" :class="{ 'pink-theme': true }">
     <h1>Local LLM Chat (Pink Edition!)</h1>
+    <div class="model-display">Current Model: {{ ollamaModel }}</div>
     <div class="chat-container">
       <textarea v-model="userInput" placeholder="Ask LLM something..." :disabled="isLoading"></textarea>
       <div class="buttons">
@@ -101,6 +102,13 @@ export default {
 
 h1 {
   color: #db7093; /* PaleVioletRed */
+}
+
+.model-display {
+  font-size: 0.9em;
+  color: #888; /* A softer, greyish color */
+  margin-bottom: 15px;
+  font-style: italic;
 }
 
 .chat-container {

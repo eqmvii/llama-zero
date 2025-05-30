@@ -10,12 +10,14 @@ RUN npm install -g @vue/cli @vue/cli-service
 # Copy package files
 COPY frontend/package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies including devDependencies
+RUN npm install --legacy-peer-deps
+
+# Install ESLint Vue plugin
+RUN npm install --save-dev eslint-plugin-vue@latest
 
 # Copy the rest of the application
 COPY frontend/ .
-
 
 # Expose the development server port
 EXPOSE 8080

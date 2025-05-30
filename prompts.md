@@ -30,3 +30,17 @@ I'm on a windows machine and don't want to install node, I want it all container
 Read docker compose for a sense of how it will later interact with the llama container.
 
 ---
+
+still on gemini 2.5 pro beta
+
+---
+
+Make a small text input in the frontend app and a submit button that allows the user to send a chat to the llama backend, listening on 11434.
+
+Once the response comes, display it underneath.
+
+Then have a reset button to reset it all. 
+
+Style as you wish. Maybe pink? Pink would be funny. 
+
+---

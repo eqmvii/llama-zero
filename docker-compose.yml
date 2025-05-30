@@ -33,6 +33,7 @@ services:
     environment:
       - VITE_OLLAMA_API_URL=http://ollama:11434
       - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
     depends_on:
       - ollama
     restart: unless-stopped

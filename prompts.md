@@ -16,3 +16,17 @@ write a basic hello world vue3 app that will be served from the docerfile.dev co
 no typescript
 
 ---
+
+gemini did it with this in one shot:
+
+---
+
+I think this frontend app is crap. It never ran, and an inferrior model generated it. Please delete the frontend/folder and the Dockerfile.dev dockerfile.
+
+Then generate A BRAND NEW dockerfile, and necessary app code. I want the smallest, simplest possible vue app running a dev server within the docker container.
+
+I'm on a windows machine and don't want to install node, I want it all containerized.
+
+Read docker compose for a sense of how it will later interact with the llama container.
+
+---

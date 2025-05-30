@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="{ 'pink-theme': true }">
-    <h1>Zrama Chat (Pink Edition!)</h1>
+    <h1>Trama Chat (Pink Edition!)</h1>
     <div class="chat-container">
       <textarea v-model="userInput" placeholder="Ask Drama something..." :disabled="isLoading"></textarea>
       <div class="buttons">
@@ -30,7 +30,7 @@ export default {
       chatResponse: '',
       errorResponse: '',
       isLoading: false,
-      ollamaModel: 'mistral' // You can change this if you use a different default model
+      ollamaModel: 'phi3:mini' // You can change this if you use a different default model
     };
   },
   methods: {

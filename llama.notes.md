@@ -26,3 +26,8 @@ emblem of transformation echoing life’s fleeting moments.
 
 >>> Send a message (/? for help)
 
+### 
+
+test:
+
+ollama nvidia-smi

@@ -1,16 +1,16 @@
 <template>
   <div id="app" :class="{ 'pink-theme': true }">
-    <h1>Trama Chat (Pink Edition!)</h1>
+    <h1>Local LLM Chat (Pink Edition!)</h1>
     <div class="chat-container">
-      <textarea v-model="userInput" placeholder="Ask Drama something..." :disabled="isLoading"></textarea>
+      <textarea v-model="userInput" placeholder="Ask LLM something..." :disabled="isLoading"></textarea>
       <div class="buttons">
         <button @click="submitChat" :disabled="isLoading || !userInput.trim()">
-          {{ isLoading ? 'Sending...' : 'Send to Drama' }}
+          {{ isLoading ? 'Sending...' : 'Send to LLM' }}
         </button>
         <button @click="resetChat" :disabled="isLoading" class="reset-button">Reset</button>
       </div>
       <div v-if="chatResponse" class="response-area">
-        <h2>Drama says:</h2>
+        <h2>LLM says:</h2>
         <pre>{{ chatResponse }}</pre>
       </div>
       <div v-if="errorResponse" class="error-area">

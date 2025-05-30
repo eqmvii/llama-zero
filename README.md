@@ -1,3 +1,7 @@
+# Pink LLamas
+
+![Screenshot](./v0.png)
+
 # Local LLM Development Environment
 
 This project sets up a local development environment for working with LLMs using Ollama and a Vue.js frontend.

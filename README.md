@@ -2,6 +2,10 @@
 
 ![Screenshot](./v0.png)
 
+# pull the model you need once containers are up
+
+ollama pull phi3:mini
+
 # Local LLM Development Environment
 
 This project sets up a local development environment for working with LLMs using Ollama and a Vue.js frontend.
